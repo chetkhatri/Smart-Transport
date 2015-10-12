@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E26A599-8D84-422B-810E-3BF882D130F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SmartTransport.My.MyApplication</StartupObject>
+    <RootNamespace>SmartTransport</RootNamespace>
+    <AssemblyName>SmartTransport</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>final_256px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SmartTransport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SmartTransport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>SmartTransport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>SmartTransport.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.BonusSkins.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.OfficeSkins.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraGrid.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Developer Express .NET v8.3\\Sources\DevExpress.DLL\DevExpress.XtraBars.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Developer Express .NET v8.3\\Sources\DevExpress.DLL\DevExpress.XtraPrinting.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073" />
+    <Reference Include="DevExpress.XtraTreeList.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmabt.designer.vb">
+      <DependentUpon>frmabt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmabt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbilltype.Designer.vb">
+      <DependentUpon>frmbilltype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbilltype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchangepw.Designer.vb">
+      <DependentUpon>frmchangepw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmchangepw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewinvoice.Designer.vb">
+      <DependentUpon>frmnewinvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewinvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstartscreen.Designer.vb">
+      <DependentUpon>frmstartscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmstartscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdesti_entry.designer.vb">
+      <DependentUpon>frmdesti_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdesti_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewinvoice.Designer.vb">
+      <DependentUpon>frmviewinvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewinvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewrate.Designer.vb">
+      <DependentUpon>frmviewrate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewrate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\databind.vb" />
+    <Compile Include="Modules\DataItem.vb" />
+    <Compile Include="Modules\validation.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rptinvoice.Designer.vb">
+      <DependentUpon>rptinvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptinvoice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptrate.Designer.vb">
+      <DependentUpon>rptrate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptrate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmabt.resx">
+      <DependentUpon>frmabt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbilltype.resx">
+      <DependentUpon>frmbilltype.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchangepw.resx">
+      <DependentUpon>frmchangepw.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewinvoice.resx">
+      <DependentUpon>frmnewinvoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstartscreen.resx">
+      <DependentUpon>frmstartscreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdesti_entry.resx">
+      <DependentUpon>frmdesti_entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewinvoice.resx">
+      <DependentUpon>frmviewinvoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewrate.resx">
+      <DependentUpon>frmviewrate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptinvoice.resx">
+      <DependentUpon>rptinvoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptrate.resx">
+      <DependentUpon>rptrate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-search-icon+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Upload-Database-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20100512-1password.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_sms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Disk01-Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stt copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social_yahoo_box_lilac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skype Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="final_256px.ico" />
+    <None Include="Resources\subject_icon_copy.ico" />
+    <None Include="Resources\excel %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
